@@ -1,7 +1,7 @@
 package hr.crnolatec.akademija.service.dummyjson;
 
 import hr.crnolatec.akademija.model.dummyjson.DummyJsonProductsResponse;
-import hr.crnolatec.akademija.model.dummyjson.Product;
+import hr.crnolatec.akademija.model.dummyjson.DummyJsonProduct;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.http.MediaType;
 import org.springframework.stereotype.Component;
@@ -24,7 +24,7 @@ public class DummyJsonProductClient {
             .build();
 
     @Cacheable("dummyjsonProducts")
-    public List<Product> fetchAllProducts() {
+    public List<DummyJsonProduct> fetchAllProducts() {
         try {
             DummyJsonProductsResponse response = restClient.get()
                     .uri(uriBuilder -> uriBuilder

@@ -6,7 +6,7 @@ import java.util.List;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
 public record DummyJsonProductsResponse(
-        List<Product> products,
+        List<DummyJsonProduct> products,
         int total,
         int skip,
         int limit

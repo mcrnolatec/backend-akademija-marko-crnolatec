@@ -6,7 +6,7 @@ import java.math.BigDecimal;
 import java.util.List;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
-public record Product(
+public record DummyJsonProduct(
         Long id,
         String title,
         String description,
