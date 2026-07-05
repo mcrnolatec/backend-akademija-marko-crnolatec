@@ -4,11 +4,9 @@ import hr.crnolatec.akademija.model.dto.ProductDTO;
 import hr.crnolatec.akademija.model.dto.ProductDetailsDTO;
 import hr.crnolatec.akademija.model.dummyjson.Product;
 import hr.crnolatec.akademija.service.ProductService;
-import org.springframework.stereotype.Service;
 
 import java.util.List;
 
-@Service
 public class ProductServiceDummyJSON implements ProductService {
 
     private final DummyJsonProductClient dummyJsonProductClient;
